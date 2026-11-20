@@ -1,0 +1,5 @@
+Rows: 569
+Predictors: 30
+Missing cells: 0
+Duplicated measurement rows: 0
+Malignant rate: 37.26%

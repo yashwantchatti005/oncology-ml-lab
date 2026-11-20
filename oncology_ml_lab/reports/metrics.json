@@ -1,0 +1,50 @@
+{
+  "dataset": "Wisconsin Diagnostic Breast Cancer",
+  "target_positive": "malignant",
+  "sample_count": 569,
+  "train_count": 341,
+  "validation_count": 114,
+  "test_count": 114,
+  "selected_model": "Logistic regression",
+  "threshold": 0.675,
+  "test_roc_auc": 0.9954,
+  "test_auc_bootstrap_95pct_ci": [
+    0.9846,
+    1.0
+  ],
+  "test_average_precision": 0.9936,
+  "test_recall_malignant": 0.9286,
+  "test_precision_malignant": 1.0,
+  "test_f1": 0.963,
+  "test_f2": 0.942,
+  "test_brier_score": 0.0214,
+  "confusion_matrix_rows_true_0_1": [
+    [
+      72,
+      0
+    ],
+    [
+      3,
+      39
+    ]
+  ],
+  "comparison": [
+    {
+      "model": "Logistic regression",
+      "cv_roc_auc": 0.9941,
+      "val_roc_auc": 0.9957,
+      "best_params": "{'model__C': 1}"
+    },
+    {
+      "model": "Random forest",
+      "cv_roc_auc": 0.9865,
+      "val_roc_auc": 0.9916,
+      "best_params": "{'model__max_depth': None, 'model__min_samples_leaf': 1, 'model__n_estimators': 200}"
+    }
+  ],
+  "notes": [
+    "Not clinically validated",
+    "No prospective or external validation",
+    "Bootstrap CI is internal, based on small test sample"
+  ]
+}
